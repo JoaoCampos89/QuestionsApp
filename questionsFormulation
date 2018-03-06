@@ -1,0 +1,28 @@
+#Question Body
+
+
+<h4 id="question"> The sum of  $${field:a,random:{max:10,min:0}$$ with $${field:a,random:{max:10,min:0}$$ is: <h4> 
+
+<p class="answer">$$function(fields){return fields.a + fields.b}$$<p> 
+
+<p class="answer2">$$function(fields){return fields.a - fields.b}$$<p> 
+
+<p class="answer3">$$function(fields){return fields.a * fields.b}$$<p> 
+
+<p class="answer4">$$function(fields){return fields.a + 2*fields.b}$$<p> 
+
+<p class="answer5">$$function(fields){return fields.a + 3*fields.b}$$<p> 
+
+
+<script>
+
+function(){
+const question = documente.getElementById("question");
+const questionText = question.innerHTML;
+const fields = questionText.match("(\$\$)(.+:.+)(\$\$)");
+
+}
+
+
+
+</script>
